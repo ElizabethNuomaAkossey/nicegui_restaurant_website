@@ -12,6 +12,19 @@ ui.add_head_html('''
 <link rel="stylesheet" href="/assets/reset.css"/>
 ''')
 
+# google fonts
+ui.add_head_html('''
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100&display=swap" rel="stylesheet">
+<style>
+        .font-poppins{font-family:'Poppins', sans-serif;}
+        .font-roboto {font-family; 'Roboto', sans-serif;}
+        .font-lobster {font-family: 'Lobster', cursive;}
+        .font {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif}
+</style>              
+''')
+
 
 
 
