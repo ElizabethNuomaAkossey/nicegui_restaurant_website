@@ -22,8 +22,9 @@ def render():
         with ui.row().classes("gap-6"):
             for item in navlinks:
                 ui.link(item["title"], item["path"]).classes(
-                    "no-underline uppercase text-black font-Poppins hover:orange-500"
+                    "no-underline uppercase text-black font-Poppins hover:!text-orange-500 transition-colors duration-300"
                 )
+
 
         # Add to cart
         with ui.button().props("dense flat no-caps").classes("rounded-full w-[75px] bg-orange-500"):

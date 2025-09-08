@@ -1,5 +1,5 @@
 from nicegui import ui,app
-from Sections import hero, welcome
+from Sections import hero, welcome,blogs
 
 
 # Expose the assets folder to the nicegui server
@@ -52,5 +52,6 @@ ui.add_head_html('''
 
 hero.render()
 welcome.render()
+blogs.render()
 
 ui.run()
