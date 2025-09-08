@@ -8,7 +8,7 @@ def render():
                 "font-lobster italic text-orange-500 text-2xl"
             )
             ui.label("THE BLOG").classes(
-                "text-6xl font-bold text-black mt-2"
+                "text-4xl font-bold text-black mt-2"
             )
 
         # blog cards container
@@ -21,13 +21,13 @@ def render():
                     "desc": "Phasellus lorem enim, luctus ut velit eget, convallis egestas eros."
                 },
                 {
-                    "image": "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg",
+                    "image": "https://cdn.pixabay.com/photo/2017/09/28/18/13/bread-2796393_1280.jpg",
                     "date": "15 Dec 2017",
                     "title": "Eggs And Cheese",
                     "desc": "Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat."
                 },
                 {
-                    "image": "https://images.pexels.com/photos/628752/pexels-photo-628752.jpeg",
+                    "image": "https://media.istockphoto.com/id/1124264599/photo/table-setting-for-an-event-party-or-wedding-reception.jpg?s=612x612&w=0&k=20&c=tp1x1duwJTUvesTEH4RrI0RZJkZ0Hv382y1zq__Y61M=",
                     "date": "12 Dec 2017",
                     "title": "Style The Wedding Party",
                     "desc": "Sed ornare ligula eget tortor tempor, quis porta tellus dictum."
@@ -36,10 +36,10 @@ def render():
 
             for blog in blogs:
                 with ui.element("div").classes(
-                    "w-[250px] bg-white rounded-lg overflow-hidden flex flex-col"
+                    "w-[320px] bg-white rounded-lg overflow-hidden flex flex-col"
                 ):
                     # image with date
-                    with ui.element("div").classes("relative w-full h-[150px] overflow-hidden"):
+                    with ui.element("div").classes("relative w-full h-[200px] overflow-hidden"):
                         ui.image(blog["image"]).classes("w-full h-full object-cover")
                         ui.label(blog["date"]).classes(
                             "absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded"

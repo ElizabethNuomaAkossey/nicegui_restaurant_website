@@ -11,8 +11,8 @@ def render():
                 "fresh ingredients, traditional recipes,<br>"
                 "and flavors that feel like home."
             ).classes("mt-6 text-m  font-Poppins")
-            ui.link("OUR STORY").classes(
-                "no-underline mt-5 px-6 py-3 rounded-lg text-black hover:text-orange-500"
+            ui.link("OUR STORY →").classes(
+                "no-underline mt-5 px-6 py-3 rounded-lg text-black hover:!text-orange-500"
             )
 
         # RIGHT SECTION
